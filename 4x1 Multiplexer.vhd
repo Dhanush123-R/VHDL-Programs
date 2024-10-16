@@ -9,7 +9,7 @@ y : out std_logic
 );
 end mux4to1;
 
-architecture dataflow of mux4to1 is
+architecture behav of mux4to1 is
 begin
   process(a,s)
     begin
@@ -26,7 +26,7 @@ begin
              y <='0'; -- optional
          end if;
     end process;
-end dataflow;
+end behav;
      -------------------------------------------
       ----------------SWITCH CONDITION-------------
          case s is
@@ -42,5 +42,5 @@ end dataflow;
                    y <='0';
         end case;
     end process;
-end dataflow; 
+end behav; 
 ------------------------------------------------
